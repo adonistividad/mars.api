@@ -1,0 +1,35 @@
+import { BaseEntity } from '../../base/base.entity';
+export declare class IccMonitoring extends BaseEntity {
+    id: number;
+    icc_monitoring_number: string;
+    bill_lading: string;
+    product_description: string;
+    quantity: string;
+    invoice_reference: string;
+    arrival_date: Date;
+    receive_document_date: Date;
+    application_surety_working_date: Date;
+    surety_bond_sign_date: Date;
+    surety_bond_return_date: Date;
+    application_to_bps_date: Date;
+    dti_conditional_release_date: Date;
+    reason_delay: string;
+    inspection_body_name: string;
+    inspection_body_date: Date;
+    wshe_inspection_date: Date;
+    samples_pullout_date: Date;
+    testing_lab_receipt_date: Date;
+    factory_country: string;
+    testing_lab_iieef_date: string;
+    testing_lab_bpstc_date: string;
+    testing_lab_tuv_date: string;
+    testing_lab_actual_date: string;
+    submit_result_bps_date: string;
+    bps_approval_date: string;
+    icc_certificate_release_date: string;
+    icc_sticker_whse_date: string;
+    remarks: string;
+    bps_reference_number: string;
+    updated_at: Date;
+    created_at: Date;
+}

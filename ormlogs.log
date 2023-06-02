@@ -1,0 +1,678 @@
+[2023-05-27T17:40:06.789Z][QUERY]: SELECT VERSION() AS `version`
+[2023-05-27T17:40:07.087Z][QUERY]: START TRANSACTION
+[2023-05-27T17:40:07.184Z][QUERY]: SELECT DATABASE() AS `db_name`
+[2023-05-27T17:40:07.280Z][QUERY]: SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'factories' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'factory_audit_schedules' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'factory_include_reducts' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'icc_monitorings' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'nct_master_files' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'pelp_10nc_finals' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'products' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'users' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'pelp_data_masters' UNION SELECT `TABLE_SCHEMA`, `TABLE_NAME` FROM `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'pelp_data_master_details'
+[2023-05-27T17:40:07.383Z][QUERY]: 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factories'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_audit_schedules'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_include_reducts'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'icc_monitorings'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'nct_master_files'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_10nc_finals'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'products'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'users'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_masters'
+                 UNION 
+                SELECT
+                    *
+                FROM
+                    `INFORMATION_SCHEMA`.`COLUMNS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_master_details'
+                
+[2023-05-27T17:40:07.385Z][QUERY]: SELECT * FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factories'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factory_audit_schedules'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factory_include_reducts'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'icc_monitorings'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'nct_master_files'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_10nc_finals'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'products'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_data_masters'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_data_master_details'
+            ) `kcu` WHERE `CONSTRAINT_NAME` = 'PRIMARY'
+[2023-05-27T17:40:07.386Z][QUERY]: 
+            SELECT
+                `SCHEMA_NAME`,
+                `DEFAULT_CHARACTER_SET_NAME` as `CHARSET`,
+                `DEFAULT_COLLATION_NAME` AS `COLLATION`
+            FROM `INFORMATION_SCHEMA`.`SCHEMATA`
+            
+[2023-05-27T17:40:07.387Z][QUERY]: 
+            SELECT
+                `s`.*
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factories'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_audit_schedules'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_include_reducts'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'icc_monitorings'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'nct_master_files'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_10nc_finals'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'products'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'users'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_masters'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`STATISTICS`
+                WHERE
+                    `TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_master_details'
+            ) `s`
+            LEFT JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factories'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_audit_schedules'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_include_reducts'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'icc_monitorings'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'nct_master_files'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_10nc_finals'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'products'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'users'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_masters'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_master_details'
+            ) `rc`
+                ON
+                    `s`.`INDEX_NAME` = `rc`.`CONSTRAINT_NAME`
+                    AND
+                    `s`.`TABLE_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA`
+            WHERE
+                `s`.`INDEX_NAME` != 'PRIMARY'
+                AND
+                `rc`.`CONSTRAINT_NAME` IS NULL
+            
+[2023-05-27T17:40:07.388Z][QUERY]: 
+            SELECT
+                `kcu`.`TABLE_SCHEMA`,
+                `kcu`.`TABLE_NAME`,
+                `kcu`.`CONSTRAINT_NAME`,
+                `kcu`.`COLUMN_NAME`,
+                `kcu`.`REFERENCED_TABLE_SCHEMA`,
+                `kcu`.`REFERENCED_TABLE_NAME`,
+                `kcu`.`REFERENCED_COLUMN_NAME`,
+                `rc`.`DELETE_RULE` `ON_DELETE`,
+                `rc`.`UPDATE_RULE` `ON_UPDATE`
+            FROM (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factories'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factory_audit_schedules'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'factory_include_reducts'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'icc_monitorings'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'nct_master_files'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_10nc_finals'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'products'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'users'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_data_masters'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE` `kcu`
+                WHERE
+                    `kcu`.`TABLE_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `kcu`.`TABLE_NAME` = 'pelp_data_master_details'
+            ) `kcu`
+            INNER JOIN (
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factories'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_audit_schedules'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'factory_include_reducts'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'icc_monitorings'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'nct_master_files'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_10nc_finals'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'products'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'users'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_masters'
+             UNION 
+                SELECT
+                    *
+                FROM `INFORMATION_SCHEMA`.`REFERENTIAL_CONSTRAINTS`
+                WHERE
+                    `CONSTRAINT_SCHEMA` = 'tividadc_projectmars'
+                    AND
+                    `TABLE_NAME` = 'pelp_data_master_details'
+            ) `rc`
+                ON
+                    `rc`.`CONSTRAINT_SCHEMA` = `kcu`.`CONSTRAINT_SCHEMA`
+                    AND
+                    `rc`.`TABLE_NAME` = `kcu`.`TABLE_NAME`
+                    AND
+                    `rc`.`CONSTRAINT_NAME` = `kcu`.`CONSTRAINT_NAME`
+            
+[2023-05-27T17:40:08.525Z][QUERY]: SELECT VERSION() AS `version`
+[2023-05-27T17:40:08.642Z][QUERY]: SELECT * FROM `INFORMATION_SCHEMA`.`COLUMNS` WHERE `TABLE_SCHEMA` = 'tividadc_projectmars' AND `TABLE_NAME` = 'typeorm_metadata'
+[2023-05-27T17:40:08.760Z][QUERY]: ALTER TABLE `factories` CHANGE `license_number` `license_number` varchar(255) NULL
+[2023-05-27T17:40:08.858Z][QUERY]: ALTER TABLE `factories` CHANGE `address` `address` varchar(255) NULL
+[2023-05-27T17:40:08.954Z][QUERY]: ALTER TABLE `factories` CHANGE `product_type` `product_type` varchar(255) NULL
+[2023-05-27T17:40:09.053Z][QUERY]: ALTER TABLE `factories` CHANGE `contact_person` `contact_person` varchar(255) NULL
+[2023-05-27T17:40:09.153Z][QUERY]: ALTER TABLE `factories` CHANGE `sku` `sku` varchar(255) NULL
+[2023-05-27T17:40:09.251Z][QUERY]: ALTER TABLE `factories` CHANGE `issued_on` `issued_on` timestamp NULL
+[2023-05-27T17:40:09.348Z][QUERY]: ALTER TABLE `factories` CHANGE `license_expiration` `license_expiration` timestamp NULL
+[2023-05-27T17:40:09.443Z][QUERY]: ALTER TABLE `factories` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:09.541Z][QUERY]: ALTER TABLE `factories` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:09.642Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `license_number` `license_number` varchar(255) NULL
+[2023-05-27T17:40:09.745Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `audit_planned` `audit_planned` varchar(255) NULL
+[2023-05-27T17:40:09.842Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `audit_actual` `audit_actual` varchar(255) NULL
+[2023-05-27T17:40:09.940Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `audit_result` `audit_result` varchar(255) NULL
+[2023-05-27T17:40:10.036Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `audit_note` `audit_note` text NULL
+[2023-05-27T17:40:10.138Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `audit_to_do` `audit_to_do` text NULL
+[2023-05-27T17:40:10.235Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:10.337Z][QUERY]: ALTER TABLE `factory_audit_schedules` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:10.447Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `type_1` `type_1` varchar(255) NULL
+[2023-05-27T17:40:10.542Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `status_date` `status_date` timestamp NOT NULL
+[2023-05-27T17:40:10.639Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `status` `status` varchar(255) NULL
+[2023-05-27T17:40:10.737Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `note` `note` text NULL
+[2023-05-27T17:40:10.835Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:10.934Z][QUERY]: ALTER TABLE `factory_include_reducts` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:11.034Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `bill_lading` `bill_lading` varchar(255) NULL
+[2023-05-27T17:40:11.131Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `product_description` `product_description` varchar(255) NULL
+[2023-05-27T17:40:11.228Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `quantity` `quantity` varchar(255) NULL
+[2023-05-27T17:40:11.327Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `invoice_reference` `invoice_reference` varchar(255) NULL
+[2023-05-27T17:40:11.426Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `arrival_date` `arrival_date` datetime NULL
+[2023-05-27T17:40:11.523Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `receive_document_date` `receive_document_date` timestamp NULL
+[2023-05-27T17:40:11.622Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `application_surety_working_date` `application_surety_working_date` timestamp NULL
+[2023-05-27T17:40:11.721Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `surety_bond_sign_date` `surety_bond_sign_date` timestamp NULL
+[2023-05-27T17:40:11.819Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `surety_bond_return_date` `surety_bond_return_date` timestamp NULL
+[2023-05-27T17:40:11.917Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `application_to_bps_date` `application_to_bps_date` timestamp NULL
+[2023-05-27T17:40:12.011Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `dti_conditional_release_date` `dti_conditional_release_date` timestamp NULL
+[2023-05-27T17:40:12.112Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `reason_delay` `reason_delay` varchar(255) NULL
+[2023-05-27T17:40:12.208Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `inspection_body_name` `inspection_body_name` varchar(255) NULL
+[2023-05-27T17:40:12.306Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `inspection_body_date` `inspection_body_date` timestamp NULL
+[2023-05-27T17:40:12.405Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `wshe_inspection_date` `wshe_inspection_date` timestamp NULL
+[2023-05-27T17:40:12.504Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `samples_pullout_date` `samples_pullout_date` timestamp NULL
+[2023-05-27T17:40:12.602Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `testing_lab_receipt_date` `testing_lab_receipt_date` timestamp NULL
+[2023-05-27T17:40:12.700Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `factory_country` `factory_country` varchar(255) NULL
+[2023-05-27T17:40:12.798Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `testing_lab_iieef_date` `testing_lab_iieef_date` varchar(255) NULL
+[2023-05-27T17:40:12.896Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `testing_lab_bpstc_date` `testing_lab_bpstc_date` varchar(255) NULL
+[2023-05-27T17:40:12.995Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `testing_lab_tuv_date` `testing_lab_tuv_date` varchar(255) NULL
+[2023-05-27T17:40:13.094Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `testing_lab_actual_date` `testing_lab_actual_date` varchar(255) NULL
+[2023-05-27T17:40:13.192Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `submit_result_bps_date` `submit_result_bps_date` varchar(255) NULL
+[2023-05-27T17:40:13.290Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `bps_approval_date` `bps_approval_date` varchar(255) NULL
+[2023-05-27T17:40:13.389Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `icc_certificate_release_date` `icc_certificate_release_date` varchar(255) NULL
+[2023-05-27T17:40:13.487Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `icc_sticker_whse_date` `icc_sticker_whse_date` varchar(255) NULL
+[2023-05-27T17:40:13.586Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `remarks` `remarks` varchar(255) NULL
+[2023-05-27T17:40:13.684Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `bps_reference_number` `bps_reference_number` varchar(255) NULL
+[2023-05-27T17:40:13.783Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:13.881Z][QUERY]: ALTER TABLE `icc_monitorings` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:13.980Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `product_description` `product_description` varchar(255) NULL
+[2023-05-27T17:40:14.078Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `product_code` `product_code` varchar(255) NULL
+[2023-05-27T17:40:14.177Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `product_type` `product_type` varchar(255) NULL
+[2023-05-27T17:40:14.275Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `applied_flag` `applied_flag` varchar(255) NULL
+[2023-05-27T17:40:14.374Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `application_date` `application_date` timestamp NULL
+[2023-05-27T17:40:14.472Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `certificate_type` `certificate_type` varchar(255) NULL
+[2023-05-27T17:40:14.571Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `certificate_issuance_date` `certificate_issuance_date` timestamp NULL
+[2023-05-27T17:40:14.669Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `certificate_number` `certificate_number` varchar(255) NULL
+[2023-05-27T17:40:14.767Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `comment` `comment` text NULL
+[2023-05-27T17:40:14.864Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:14.961Z][QUERY]: ALTER TABLE `nct_master_files` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:15.061Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `factory_name` `factory_name` varchar(255) NULL
+[2023-05-27T17:40:15.158Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `product_number_12nc` `product_number_12nc` varchar(255) NULL
+[2023-05-27T17:40:15.256Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `product_number_10nc` `product_number_10nc` varchar(255) NULL
+[2023-05-27T17:40:15.355Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `energy_rating` `energy_rating` int NULL
+[2023-05-27T17:40:15.453Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `description_orig` `description_orig` varchar(255) NULL
+[2023-05-27T17:40:15.547Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `description_pelp` `description_pelp` varchar(255) NULL
+[2023-05-27T17:40:15.641Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `pelp_applied` `pelp_applied` varchar(255) NULL
+[2023-05-27T17:40:15.736Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `label_issued` `label_issued` varchar(255) NULL
+[2023-05-27T17:40:15.833Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `urgency` `urgency` varchar(255) NULL
+[2023-05-27T17:40:15.931Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `energy_label_12nc` `energy_label_12nc` varchar(255) NULL
+[2023-05-27T17:40:16.030Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `status` `status` varchar(255) NULL
+[2023-05-27T17:40:16.125Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `report_issued` `report_issued` timestamp NULL
+[2023-05-27T17:40:16.222Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `reports` `reports` varchar(255) NULL
+[2023-05-27T17:40:16.320Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `lab_name` `lab_name` varchar(255) NULL
+[2023-05-27T17:40:16.419Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `need_retesting` `need_retesting` varchar(255) NULL
+[2023-05-27T17:40:16.517Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `comment` `comment` text NULL
+[2023-05-27T17:40:16.617Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `remarks` `remarks` text NULL
+[2023-05-27T17:40:16.714Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `remarks2` `remarks2` text NULL
+[2023-05-27T17:40:16.812Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:16.911Z][QUERY]: ALTER TABLE `pelp_10nc_finals` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:17.009Z][QUERY]: ALTER TABLE `products` CHANGE `product_description` `product_description` varchar(255) NULL
+[2023-05-27T17:40:17.106Z][QUERY]: ALTER TABLE `products` CHANGE `bps_number` `bps_number` varchar(255) NULL
+[2023-05-27T17:40:17.205Z][QUERY]: ALTER TABLE `products` CHANGE `title_groupings` `title_groupings` timestamp NULL
+[2023-05-27T17:40:17.303Z][QUERY]: ALTER TABLE `products` CHANGE `effective_date` `effective_date` datetime NULL
+[2023-05-27T17:40:17.400Z][QUERY]: ALTER TABLE `products` CHANGE `status` `status` varchar(255) NULL
+[2023-05-27T17:40:17.525Z][QUERY]: ALTER TABLE `products` CHANGE `replacement_code` `replacement_code` varchar(255) NULL
+[2023-05-27T17:40:17.622Z][QUERY]: ALTER TABLE `products` CHANGE `samples_needed` `samples_needed` varchar(255) NULL
+[2023-05-27T17:40:17.721Z][QUERY]: ALTER TABLE `products` CHANGE `remarks` `remarks` text NULL
+[2023-05-27T17:40:17.815Z][QUERY]: ALTER TABLE `products` CHANGE `remarks2` `remarks2` text NULL
+[2023-05-27T17:40:17.913Z][QUERY]: ALTER TABLE `products` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:18.011Z][QUERY]: ALTER TABLE `products` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:18.118Z][QUERY]: ALTER TABLE `users` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:18.211Z][QUERY]: ALTER TABLE `users` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:18.306Z][QUERY]: ALTER TABLE `users` CHANGE `auth_strategy` `auth_strategy` varchar(255) NULL
+[2023-05-27T17:40:18.406Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `factory_name` `factory_name` varchar(255) NULL
+[2023-05-27T17:40:18.503Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `product_number_12nc` `product_number_12nc` varchar(255) NULL
+[2023-05-27T17:40:18.602Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `product_number_10nc` `product_number_10nc` varchar(255) NULL
+[2023-05-27T17:40:18.700Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `energy_rating` `energy_rating` int NULL
+[2023-05-27T17:40:18.799Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `description_orig` `description_orig` varchar(255) NULL
+[2023-05-27T17:40:18.897Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `description_pelp` `description_pelp` varchar(255) NULL
+[2023-05-27T17:40:18.995Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `pelp_applied` `pelp_applied` varchar(255) NULL
+[2023-05-27T17:40:19.093Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `label_issued` `label_issued` varchar(255) NULL
+[2023-05-27T17:40:19.192Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `urgency` `urgency` varchar(255) NULL
+[2023-05-27T17:40:19.290Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `energy_label_12nc` `energy_label_12nc` varchar(255) NULL
+[2023-05-27T17:40:19.388Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `status` `status` varchar(255) NULL
+[2023-05-27T17:40:19.487Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `report_issued` `report_issued` timestamp NULL
+[2023-05-27T17:40:19.585Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `reports` `reports` varchar(255) NULL
+[2023-05-27T17:40:19.684Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `lab_name` `lab_name` varchar(255) NULL
+[2023-05-27T17:40:19.782Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `need_retesting` `need_retesting` varchar(255) NULL
+[2023-05-27T17:40:19.880Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `comment` `comment` text NULL
+[2023-05-27T17:40:19.979Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `remarks` `remarks` text NULL
+[2023-05-27T17:40:20.077Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `remarks2` `remarks2` text NULL
+[2023-05-27T17:40:20.176Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:20.274Z][QUERY]: ALTER TABLE `pelp_data_masters` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:20.375Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `factory_name` `factory_name` varchar(255) NULL
+[2023-05-27T17:40:20.471Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `product_number_12nc` `product_number_12nc` varchar(255) NULL
+[2023-05-27T17:40:20.565Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `product_number_10nc` `product_number_10nc` varchar(255) NULL
+[2023-05-27T17:40:20.663Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `energy_rating` `energy_rating` int NULL
+[2023-05-27T17:40:20.760Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `description_orig` `description_orig` varchar(255) NULL
+[2023-05-27T17:40:20.859Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `description_pelp` `description_pelp` varchar(255) NULL
+[2023-05-27T17:40:20.952Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `pelp_applied` `pelp_applied` varchar(255) NULL
+[2023-05-27T17:40:21.052Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `label_issued` `label_issued` varchar(255) NULL
+[2023-05-27T17:40:21.149Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `urgency` `urgency` varchar(255) NULL
+[2023-05-27T17:40:21.248Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `energy_label_12nc` `energy_label_12nc` varchar(255) NULL
+[2023-05-27T17:40:21.347Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `status` `status` varchar(255) NULL
+[2023-05-27T17:40:21.445Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `report_issued` `report_issued` timestamp NULL
+[2023-05-27T17:40:21.539Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `reports` `reports` varchar(255) NULL
+[2023-05-27T17:40:21.637Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `lab_name` `lab_name` varchar(255) NULL
+[2023-05-27T17:40:21.743Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `need_retesting` `need_retesting` varchar(255) NULL
+[2023-05-27T17:40:21.838Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `comment` `comment` text NULL
+[2023-05-27T17:40:21.941Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `remarks` `remarks` text NULL
+[2023-05-27T17:40:22.038Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `remarks2` `remarks2` text NULL
+[2023-05-27T17:40:22.133Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `updated_at` `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:22.232Z][QUERY]: ALTER TABLE `pelp_data_master_details` CHANGE `created_at` `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(6)
+[2023-05-27T17:40:22.333Z][QUERY]: COMMIT

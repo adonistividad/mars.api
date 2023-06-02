@@ -1,0 +1,43 @@
+nest new api.mars
+yarn add @nestjs/typeorm typeorm mysql2
+yarn start:dev
+
+nest g module users
+nest g controller users
+nest g service users
+
+nest g module /modules/products
+nest g controller /modules/products
+nest g service /modules/products
+
+nest g module /modules/factories
+nest g controller /modules/factories
+nest g service /modules/factories
+
+nest g module /modules/factory_audit_schedules
+nest g controller /modules/factory_audit_schedules
+nest g service /modules/factory_audit_schedules
+
+nest g module /modules/factory_include_reducts
+nest g controller /modules/factory_include_reducts
+nest g service /modules/factory_include_reducts
+
+nest g module /modules/icc_monitorings
+nest g controller /modules/icc_monitorings
+nest g service /modules/icc_monitorings
+
+nest g module /modules/nct_master_files
+nest g controller /modules/nct_master_files
+nest g service /modules/nct_master_files
+
+nest g module /modules/pelp_10nc_finals
+nest g controller /modules/pelp_10nc_finals
+nest g service /modules/pelp_10nc_finals
+
+nest g module /modules/pelp_data_masters
+nest g controller /modules/pelp_data_masters
+nest g service /modules/pelp_data_masters
+
+nest g module /modules/pelp_data_master_details
+nest g controller /modules/pelp_data_master_details
+nest g service /modules/pelp_data_master_details
