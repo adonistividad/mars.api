@@ -41,3 +41,25 @@ nest g service /modules/pelp_data_masters
 nest g module /modules/pelp_data_master_details
 nest g controller /modules/pelp_data_master_details
 nest g service /modules/pelp_data_master_details
+
+
+
+git clone https://github.com/Azure-Samples/aci-helloworld.git
+az acr build --image demo/custom-image-demo:v1 --registry marsdemocr2 --file Dockerfile .
+az acr build --image demo/custom-image-demo:v2 --registry marsdemocr2 --file Dockerfile .
+
+
+https://www.youtube.com/watch?v=BrlQthcUHGw&t=53s
+https://nodejs.org/en/docs/guides/nodejs-docker-webapp
+
+
+docker build . -t <your username>/node-web-app
+docker build . -t adonis/mars-api
+
+docker images
+
+docker run -p 8080:3000 -d <your username>/node-web-app
+docker run -p 8080:3000 -d adonis/mars-api
+
+
+
