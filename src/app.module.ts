@@ -18,8 +18,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      // envFilePath: ['.env.development.local', '.env.development'],
-      envFilePath: ['.env.development'],
+      // envFilePath: ['.env.development','.env.development.local', '.env.development'],
+      envFilePath: ['.env.aws'],
+      // envFilePath: ['.env'],
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],      
@@ -30,6 +31,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         database: configService.get<string>('DATABASE_NAME'),
         username: configService.get<string>('DATABASE_USERNAME'),
         password: configService.get<string>('DATABASE_PASSWORD'),
+        // sche: configService.get<string>('DATABASE_PASSWORD'),
         entities: [__dirname + '/**/*.entity{.ts,.js}'],
         // logging: true,
         // synchronize: false,

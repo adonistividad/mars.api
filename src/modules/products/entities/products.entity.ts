@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm';
 import { BaseEntity } from '../../base/base.entity';
 
 @Entity({ name: 'products' })
@@ -39,10 +39,10 @@ export class Product extends BaseEntity {
   @Column({ nullable: true, type: 'text' })
   remarks2: string;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+  @CreateDateColumn({ onUpdate: 'CURRENT_TIMESTAMP(6)' })
   updated_at: Date;
- 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+  
+  @CreateDateColumn()
   created_at: Date;
 
   /****

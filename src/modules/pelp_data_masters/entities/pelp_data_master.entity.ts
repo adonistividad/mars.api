@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { BaseEntity } from '../../base/base.entity';
 
 @Entity({ name: 'pelp_data_masters' })
@@ -60,10 +60,10 @@ export class PelpDataMaster extends BaseEntity {
   @Column({ type: 'text', nullable: true })
   remarks2: string;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+  @CreateDateColumn({ onUpdate: 'CURRENT_TIMESTAMP(6)' })
   updated_at: Date;
-
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+  
+  @CreateDateColumn()
   created_at: Date;
 }
 

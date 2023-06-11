@@ -1,8 +1,13 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+} from 'typeorm';
 import { BaseEntity } from '../../base/base.entity';
- 
+
 @Entity({ name: 'users' })
-export class User extends BaseEntity{
+export class User extends BaseEntity {
   @PrimaryGeneratedColumn({ type: 'bigint' })
   id: number;
 
@@ -11,11 +16,11 @@ export class User extends BaseEntity{
 
   @Column()
   password: string;
- 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+
+  @CreateDateColumn({ onUpdate: 'CURRENT_TIMESTAMP(6)' })
   updated_at: Date;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP(6)' })
+  @CreateDateColumn()
   created_at: Date;
 
   @Column({ nullable: true })
@@ -24,7 +29,7 @@ export class User extends BaseEntity{
   // @OneToOne(() => Profile)
   // @JoinColumn()
   // profile: Profile;
- 
+
   // @OneToMany(() => Post, (post) => post.user)
   // posts: Post[];
 
@@ -35,7 +40,7 @@ export class User extends BaseEntity{
   // @Column({ length: 50 })
   // @ApiProperty()
   // readonly age: number;
-  
+
   // @Column({ length: 50 })
   // @ApiProperty()
   // readonly favouriteColor: string;
