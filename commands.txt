@@ -42,11 +42,21 @@ nest g module /modules/pelp_data_master_details
 nest g controller /modules/pelp_data_master_details
 nest g service /modules/pelp_data_master_details
 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+
+
+ 
 
 
 git clone https://github.com/Azure-Samples/aci-helloworld.git
-az acr build --image demo/custom-image-demo:v1 --registry marsdemocr2 --file Dockerfile .
 az acr build --image demo/custom-image-demo:v2 --registry marsdemocr2 --file Dockerfile .
+
+git clone https://github.com/adonistividad/mars.api.git
+cd ./mars.api/ 
+az acr build --image mars/mars-api:v1 --registry marsapicr --file Dockerfile .
+
+
 
 
 https://www.youtube.com/watch?v=BrlQthcUHGw&t=53s
@@ -59,7 +69,8 @@ docker build . -t adonis/mars-api
 docker images
 
 docker run -p 8080:3000 -d <your username>/node-web-app
-docker run -p 8080:3000 -d adonis/mars-api
+docker run -p 3000:3000 -d adonis/mars-api
 
 
 
+az acr build --image mars/mars-draft:v1 --registry marsdraftcr --file Dockerfile .
