@@ -74,3 +74,7 @@ docker run -p 3000:3000 -d adonis/mars-api
 
 
 az acr build --image mars/mars-draft:v1 --registry marsdraftcr --file Dockerfile .
+
+
+https://medium.com/@chnirt/how-do-i-practice-with-nestjs-nestjs-typeorm-mongodb-9e407818a296
+https://www.brunnerliv.io/articles/advanced-nestjs-dymaic-providers
